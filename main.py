@@ -3,7 +3,7 @@ from langchain import PromptTemplate
 #from langchain.llms import OpenAI #so vananenud rida ning asendatud allolevaga
 from langchain_community.llms import OpenAI
 import os
-# OUTPUT TEXT in Estonian; 16nda rea lõppu
+
 template = """
  You are a marketing copywriter with 20 years of experience. You are analyzing customer's background to write personalized product description that only this customer will receive; 
     PRODUCT input text: {content};
@@ -14,8 +14,8 @@ template = """
     PRODUCT DESCRIPTION: describe the product in 5 sentences;
     BENEFITS: describe in 3 sentences why this product is perfect considering customers age group and communication channel;
     USE CASE: write a story in 5 sentences, of an example weekend activity taking into account communication channel {communication_channel} and age {agegroup}, write a story in first person, example "I started my Saturday morning with ...";
-    OUTPUT TEXT in Estonian;
 """
+#    OUTPUT TEXT in Estonian;
 
 prompt = PromptTemplate(
     input_variables=["agegroup", "communication_channel", "content"],
