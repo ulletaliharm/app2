@@ -59,7 +59,7 @@ with col1:
         ('9-15', '16-19', '20-29', '30-39', '40-49', '50-59', '60-69', '70-79', '80-100'))
     
 def get_communication_channel():
-    input_text = st.text_input(label="Customers main communication channel", placeholder="Your content...", key="communication_channel_input")
+    input_text = st.text_input(label="Customers main communication channel", placeholder="television, email, radio, social media...", key="communication_channel_input")
     return input_text
 
 communication_channel_input = get_communication_channel()
