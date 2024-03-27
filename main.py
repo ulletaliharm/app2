@@ -3,7 +3,7 @@ from langchain import PromptTemplate
 #from langchain.llms import OpenAI #so vananenud rida ning asendatud allolevaga
 from langchain_community.llms import OpenAI
 import os
-
+# OUTPUT TEXT in Estonian; 16nda rea lõppu
 template = """
  You are a marketing copywriter with 20 years of experience. You are analyzing customer's background to write personalized product description that only this customer will receive; 
     PRODUCT input text: {content};
